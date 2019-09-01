@@ -39,6 +39,7 @@ export default {
   },
   methods: {
     HeadAdd(index) {
+      console.log(this.List)
       this.countIndex = index;
       this.List = this.ListDataArr["ranklist" +index];
     }

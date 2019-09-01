@@ -1,6 +1,6 @@
 <template>
   <div>
-    <dl>
+    <router-link tag="dl" :to="{path:'/xq',query:{id:item.bookId}}">
       <dt>
         <img :src="item.coverUrl" alt />
       </dt>
@@ -13,11 +13,12 @@
         <div class="itemIndex">更新至：{{item.updteChapterName}}</div>
         <div class="itemIndex">简介：{{item.description}}</div>
       </dd>
-    </dl>
+    </router-link>
   </div>
 </template>
 
 <script>
+
 export default {
   props: ["item"]
 };

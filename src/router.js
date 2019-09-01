@@ -4,6 +4,7 @@ import Home from "../src/views/home"
 import Show from "../src/views/show"
 import Pah from "../src/views/pah"
 import Shu from "../src/views/shu"
+import Xq from "../src/views/Xq"
 Vue.use(Router)
 
 export default new Router({
@@ -25,6 +26,10 @@ export default new Router({
     }, {
       path: "/shu",
       component: Shu
+    },
+    {
+      path:"/xq",
+      component:Xq
     }
   ]
 })
